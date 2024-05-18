@@ -1,12 +1,12 @@
 // import React from "react";
 import logo from "../../assets/logoshop.png";
 import { IoSearchSharp } from "react-icons/io5";
-
+import { RiShoppingCart2Fill } from "react-icons/ri";
 const Navbar = () => {
   return (
-    <div className="drop-shadow-md bg-white dark:bg-grey-900 dark:text-white duration-200 z-40">
+    <div className="drop-shadow-md bg-white dark:bg-grey-900 dark:text-white duration-200 z-40 ">
       {/* upper Navbar */}
-      <div className="bg-primary">
+      <div className="bg-primary flex">
         <div className="container flex justify-between items-center">
           <div>
             <a
@@ -22,13 +22,31 @@ const Navbar = () => {
             </a>
           </div>
           {/* searchbar */}
-          <div className="group">
-            <input
-              type="text"
-              placeholder="search"
-              className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-primary px-2 py-1 focus:outline-none focus:border-1 focus:border-orange-400"
-            />
-            <IoSearchSharp />
+          <div className="flex justify-between items-center gap-4">
+            <div className="relative group overflow-hidden sm:block ">
+              <input
+                type="text"
+                placeholder="search"
+                className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-primary px-2 py-1 focus:outline-none focus:border-1 focus:border-orange-400"
+              />
+              <IoSearchSharp
+                className="text-gray-500 group-hover:text-red-500 absolute top-1/2 -translate-y-1/2 right-3"
+                onClick={() => alert("no clothes yet,")}
+              />
+            </div>
+            {/* order button */}
+            <button
+              type="button"
+              className=" bg-gradient-to-r from-orange-300 to-red-500 m-1 py-1 px-4 transition-all duration-200 rounded-full flex items-center gap-3 group  text-white bg-blend-lighten"
+              onClick={() => alert("no order yet")}
+            >
+              <span className="group-hover:block hidden transition-all duration-200">
+                Order
+              </span>
+              <RiShoppingCart2Fill className="flex items-center text-[20px] drop-shadow-sm cursor-pointer" />
+            </button>
+            {/* dark mode button */}
+            <button></button>
           </div>
         </div>
       </div>
