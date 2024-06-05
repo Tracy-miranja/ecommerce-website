@@ -2,6 +2,16 @@
 import logo from "../../assets/logoshop.png";
 import { IoSearchSharp } from "react-icons/io5";
 import { RiShoppingCart2Fill } from "react-icons/ri";
+import DarkMode from "./DarkMode";
+// import { list } from "postcss";
+const Menu = [
+  { id: 1, name: "Home", link: "/#" },
+  { id: 2, name: "Top Rated", link: "/#Service" },
+  { id: 3, name: "Kids Ware", link: "/#" },
+  { id: 4, name: "Mens Wear", link: "/#" },
+  { id: 4, name: "Women Wear", link: "/#" },
+  { id: 4, name: "Electronics", link: "/#" },
+];
 const Navbar = () => {
   return (
     <div className="drop-shadow-md bg-white dark:bg-grey-900 dark:text-white duration-200 z-40 ">
@@ -46,12 +56,25 @@ const Navbar = () => {
               <RiShoppingCart2Fill className="flex items-center text-[20px] drop-shadow-sm cursor-pointer" />
             </button>
             {/* dark mode button */}
-            <button></button>
+            <DarkMode />
           </div>
         </div>
       </div>
       {/* lower Navbar */}
-      <div className="bg-red-500">Navbrand</div>
+      <div className="bg-red-500 flex justify-center">
+        <ul className="sm:flex hidden items-center ">
+          {Menu.map((data) => (
+            <li key={data.id}>
+              <a
+                href={data.link}
+                className="inline-block px-3 py-3 text-red-50 hover:text-purple-500 duration-200 "
+              >
+                {data.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
