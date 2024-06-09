@@ -1,5 +1,5 @@
 // import React from "react";
-import logo from "../../assets/logoshop.png";
+// import logo from "../../assets/logoshop.png";
 import { IoSearchSharp } from "react-icons/io5";
 import { RiShoppingCart2Fill } from "react-icons/ri";
 import DarkMode from "./DarkMode";
@@ -30,12 +30,12 @@ const Navbar = () => {
               href="#"
               className="font-bold text-2xl sm:text-2xl flex gap-2 text-white"
             >
-              <img
+              {/* <img
                 src={logo}
                 alt="NavBrand"
                 className="w-24 h-10 uppercase text-center "
-              />{" "}
-              <span className="text-red-500">Kushi</span>-wear
+              />{" "} */}
+              <span className="text-orange-300">Kushi</span>-wear
             </a>
           </div>
           {/* searchbar */}
