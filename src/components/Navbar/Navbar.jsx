@@ -68,7 +68,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* lower Navbar */}
-      <div className="bg-red-500 flex justify-center">
+      <div className="bg-red-500 flex justify-center z-[999]">
         <ul className="sm:flex hidden items-center ">
           {Menu.map((data) => (
             <li key={data.id}>
