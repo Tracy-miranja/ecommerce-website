@@ -10,21 +10,21 @@ const imageList = [
     img: womenwear,
     title: "Upto 50% off Men's wear ",
     decription:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.<br> Lorem ipsum may be used as a placeholder before the final copy is available.",
+      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
   },
   {
-    id: 1,
+    id: 2,
     img: womenwear,
     title: "Upto 50% off Men's wear ",
     decription:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.<br> Lorem ipsum may be used as a placeholder before the final copy is available.",
+      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
   },
   {
-    id: 1,
+    id: 3,
     img: womenwear,
     title: "Upto 50% off Men's wear ",
     decription:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.<br> Lorem ipsum may be used as a placeholder before the final copy is available.",
+      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
   },
 ];
 
@@ -52,12 +52,9 @@ const Hero = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2">
                 <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
                   <h1 className="text-black text-5xl sm:text:6xl lg:text-7xl font-bold">
-                    Lorem ipsum dolor sit eligendi.
+                    {data.title}
                   </h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit, omnis?
-                  </p>
+                  <p>{data.decription}</p>
                   <div>
                     <button className="bg-gradient-to-r from-orange-300 to-red-500 hover:scale-150 text-white py-2 px-2 rounded-3xl">
                       Order Now
