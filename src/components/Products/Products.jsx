@@ -95,14 +95,14 @@ const Products = () => {
         </div>
         {/* body section */}
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 place-items-center gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 place-items-center gap-5 ">
             {/* card section */}
             {ProductData.map((data) => (
               <div
                 data-aos="fade-up"
                 data-aos-delay={data.aosDelay}
                 key={data.id}
-                className="space-y-3"
+                className="space-y-3 shadow-lg"
               >
                 <>
                   <img
@@ -125,6 +125,14 @@ const Products = () => {
                 </>
               </div>
             ))}
+          </div>
+          <div className="flex justify-center mt-10 items-center group">
+            <button
+              type="button"
+              className="rounded-md bg-orange-500 p-2 text-white transition-colors duration-300 group-hover:bg-white group-hover:text-black group-hover:border group-hover:border-black"
+            >
+              view all clothes
+            </button>
           </div>
         </div>
       </div>
