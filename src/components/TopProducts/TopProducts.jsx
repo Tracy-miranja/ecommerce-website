@@ -90,14 +90,32 @@ const TopProducts = () => {
         {/* body section */}
         <div className="grid lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-1 gap-5 ">
           {ProductData.map((data) => (
-            <div key={data.id}>
+            <div data-aos="zoom-in" key={data.id}>
               <div className="dark:bg-gray-500 group rounded-2xl hover:bg-black/80 hover:text-white duration-300 group max-w-[300px] max-h-[500px] bg-white  shadow-xl">
                 <div className="flex h-[200px] justify-center">
                   <img
                     src={data.img}
                     alt="images"
-                    className="max-w-[200px] block max-auto h-[200px] transform hover:translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md"
+                    className="max-w-[200px] block max-auto h-[200px] transform hover:translate-y-5 group-hover:scale-105 duration-300 drop-shadow-md"
                   />
+                </div>
+                {/* details section */}
+                <div className="p-4 text-center">
+                  {/* star rating */}
+                  <div className="w-full flex text-center justify-center">
+                    <FaStar className="text-yellow-500" />
+                    <FaStar className="text-yellow-500" />
+                    <FaStar className="text-yellow-500" />
+                    <FaStar className="text-yellow-500" />
+                    <FaStar className="text-yellow-500" />
+                  </div>
+                  <h1 className="text-xl font-bold">{data.title}</h1>
+                  <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
+                    {data.description}
+                  </p>
+                  <button className="bg-orange-500 hover:scale-105 text-white rounded-full group-hover:bg-inherit group-hover:text-white p-1 mt-1 border group-hover:border-white">
+                    Order Now
+                  </button>
                 </div>
               </div>
             </div>
