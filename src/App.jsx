@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Products from "./components/Products/Products.jsx";
+import Banner from "./components/Banner/Banner.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TopProducts from "./components/TopProducts/TopProducts.jsx";
@@ -22,6 +23,7 @@ const App = () => {
       <Hero />
       <Products />
       <TopProducts />
+      <Banner />
     </div>
   );
 };
