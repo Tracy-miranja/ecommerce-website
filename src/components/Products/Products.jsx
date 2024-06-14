@@ -95,7 +95,7 @@ const Products = () => {
         </div>
         {/* body section */}
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 place-items-center gap-5 ">
+          <div className="grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 place-items-center gap-5 ">
             {/* card section */}
             {ProductData.map((data) => (
               <div
@@ -108,7 +108,7 @@ const Products = () => {
                   <img
                     src={data.img}
                     alt=""
-                    className="h-[220px] w-[150px] sm:w-[400px] object-cover rounded-md"
+                    className="h-[250px] w-[250px] sm:w-[400px] object-cover rounded-md"
                   />
                   <div>
                     <h3 data-aos="fade-up" className="font-semibold">

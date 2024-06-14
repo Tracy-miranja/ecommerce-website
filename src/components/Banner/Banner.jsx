@@ -18,6 +18,33 @@ const Banner = () => {
             />
           </div>
           {/* text section */}
+          <div className="flex flex-col justify-center sm:p-0 gap-6">
+            <h1 data-aos="fade-up" className="text-3xl sm:text-4xl font-bold ">
+              winter sales upto 50% off
+            </h1>
+            <p
+              data-aos="fade-up"
+              className="text-sm text-gray-500 tracking-wide leadimg-5"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              commodi nihil distinctio! Voluptas cum temporibus adipisci
+              officiis nobis tempora rerum suscipit nam magni!
+            </p>
+            <div className="flex flex-col gap-4">
+              <div data-aos="fade-up" className="flex items-center gap-4">
+                <GrSecure className="text-4xl h-12 w-12 shadow-sm rounded-md bg-violet-100 p-4 dark:bg-white-500 dark:text-violate-800" />
+                <p>Quality products</p>
+              </div>
+              <div data-aos="fade-up" className="flex items-center gap-4 mt-5">
+                <IoFastFood className="text-4xl h-12 w-12 shadow-sm rounded-md bg-violet-100 p-4 dark:bg-orange-500 " />
+                <p>Fast delivery</p>
+              </div>
+              <div data-aos="fade-up" className="flex items-center gap-4 mt-5">
+                <GiFoodTruck className="text-4xl h-12 w-12 shadow-sm rounded-md bg-violet-100 p-4 dark:bg-orange-500 " />
+                <p>Get offers</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

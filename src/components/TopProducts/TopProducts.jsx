@@ -88,7 +88,7 @@ const TopProducts = () => {
           </p>
         </div>
         {/* body section */}
-        <div className="grid lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-1 gap-5 ">
+        <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 gap-5 ">
           {ProductData.map((data) => (
             <div data-aos="zoom-in" key={data.id}>
               <div className="dark:bg-gray-500 group rounded-2xl hover:bg-black/80 hover:text-white duration-300 group max-w-[300px] max-h-[500px] bg-white  shadow-xl">
