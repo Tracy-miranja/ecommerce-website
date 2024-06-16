@@ -9,6 +9,7 @@ import TopProducts from "./components/TopProducts/TopProducts.jsx";
 import Subscribe from "./components/Subscribe/Subscribe.jsx";
 import TopSelling2 from "./components/TopSelling2/TopSelling2.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 const App = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const App = () => {
       <Subscribe />
       <TopSelling2 />
       <Testimonials />
+      <Footer />
     </div>
   );
 };
