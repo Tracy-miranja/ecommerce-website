@@ -41,7 +41,7 @@ const Hero = () => {
     pauseOnFocus: true,
   };
   return (
-    <div className="relative overflow-hidden min-h-[500px] sm:min-h-[590px] bg-gray-150 flex justify-center text-center dark:bg-gray-500 duration-200 -z-[999]">
+    <div className="relative overflow-hidden min-h-[560px] sm:min-h-[590px] bg-gray-200 flex justify-center text-center dark:bg-orange-500 duration-200 -z-[999]">
       {/* background pattern */}
       <div className="h-[700px] w-[700px] bg-orange-300 absolute -top-1/2 right-0 rounded-3xl rotate-45 -z-9"></div>
       {/* hero section */}
