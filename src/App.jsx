@@ -14,6 +14,7 @@ import Popup from "./components/popup/Popup.jsx";
 
 const App = () => {
   const [orderpopup, setOrderPopup] = useState(false);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     AOS.init({
@@ -26,7 +27,7 @@ const App = () => {
   }, []);
   return (
     <div className=" dark:bg-gray-800 dark:text-white duration-200">
-      <Navbar />
+      <Navbar count={count} />
       <Hero />
       <Products />
       <TopProducts setOrderPopup={setOrderPopup} />
@@ -35,7 +36,12 @@ const App = () => {
       <TopSelling2 />
       <Testimonials />
       <Footer />
-      <Popup orderpopup={orderpopup} setOrderPopup={setOrderPopup} />
+      <Popup
+        orderpopup={orderpopup}
+        setOrderPopup={setOrderPopup}
+        setCount={setCount}
+        count={count}
+      />
     </div>
   );
 };

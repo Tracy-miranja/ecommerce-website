@@ -19,7 +19,8 @@ const DropdownLinks = [
   { id: 2, name: "Best selling", link: "/#" },
   { id: 3, name: "Top Rated", link: "/#" },
 ];
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ count }) => {
   return (
     <div className=" sticky top-0 drop-shadow-md bg-white dark:bg-grey-900 dark:text-white duration-200 z-40">
       {/* upper Navbar */}
@@ -52,16 +53,21 @@ const Navbar = () => {
               />
             </div>
             {/* order button */}
-            <button
-              type="button"
-              className=" bg-gradient-to-r from-orange-300 to-red-500 m-1 py-1 px-4 transition-all duration-200 rounded-full flex items-center gap-3 group  text-white bg-blend-lighten"
-              onClick={() => alert("no order yet")}
-            >
-              <span className="group-hover:block hidden transition-all duration-200">
-                Order
-              </span>
-              <RiShoppingCart2Fill className="flex items-center text-[20px] drop-shadow-sm cursor-pointer" />
-            </button>
+            <div className="group relative">
+              <button
+                type="button"
+                className=" bg-gradient-to-r from-orange-300 to-red-500 m-1 py-1 px-4 transition-all duration-200 rounded-full flex items-center gap-3 group  text-white bg-blend-lighten"
+                onClick={() => alert("no order yet")}
+              >
+                <span className="group-hover:block hidden transition-all duration-200">
+                  Order
+                </span>
+                <RiShoppingCart2Fill className="flex items-center text-[20px] drop-shadow-sm cursor-pointer" />
+              </button>
+              <div className="absolute rounded-full bg-white text-orange-600 w-8 text-center -mt-12 ml-10 group-hover:ml-20">
+                {count}
+              </div>
+            </div>
             {/* dark mode button */}
             <DarkMode />
           </div>
