@@ -4,25 +4,25 @@ import React from "react";
 import Slider from "react-slick";
 const bodyCards = [
   {
-    id: 1,
+    id: 11,
     name: "Grace muhavi",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus debitis, sint asperiores molestiae culpa fugiat velit blanditi",
     img: "https://picsum.photos/106/106",
   },
   {
-    id: 2,
+    id: 12,
     name: "Shalline khaver",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus debitis, sint asperiores molestiae culpa fugiat velit blanditi",
     img: "https://picsum.photos/103/103",
   },
   {
-    id: 3,
+    id: 13,
     name: "omar albert",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus debitis, sint asperiores molestiae culpa fugiat velit blanditi",
     img: "https://picsum.photos/102/102",
   },
   {
-    id: 4,
+    id: 14,
     name: "wayne ali",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus debitis, sint asperiores molestiae culpa fugiat velit blanditi",
     img: "https://picsum.photos/101/101",

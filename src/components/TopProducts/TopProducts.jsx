@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useState } from "react";
 import fashionwomentshirts from "../../assets/fashion-women-tshirts.jpg";
 import Africanprint from "../../assets/African-print.jpg";
 import menprintedshirts from "../../assets/men-printed-shirts.jpg";
@@ -7,9 +7,10 @@ import leopardprint from "../../assets/leopard-print.jpg";
 import leryafashion from "../../assets/lerya-fashion.jpg";
 import floralshirtsWomenBlouses from "../../assets/floral-shirts-Women-Blouses.webp";
 import { FaStar } from "react-icons/fa";
+
 const ProductData = [
   {
-    id: 1,
+    id: 16,
     img: fashionwomentshirts,
     ratings: 5.0,
     title: "Kids wear",
@@ -19,7 +20,7 @@ const ProductData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cumque ullam ea!",
   },
   {
-    id: 2,
+    id: 15,
     img: Africanprint,
     ratings: 5.0,
     title: "Women wear",
@@ -29,7 +30,7 @@ const ProductData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cumque ullam ea!",
   },
   {
-    id: 3,
+    id: 18,
     img: menprintedshirts,
     ratings: 5.0,
     title: "Kids wear",
@@ -39,7 +40,7 @@ const ProductData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cumque ullam ea!",
   },
   {
-    id: 4,
+    id: 19,
     img: floralshirtsWomenBlouses,
     ratings: 5.0,
     title: "women wear",
@@ -49,7 +50,7 @@ const ProductData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cumque ullam ea!",
   },
   {
-    id: 5,
+    id: 20,
     img: leopardprint,
     ratings: 5.0,
     title: "Kids wear",
@@ -59,7 +60,7 @@ const ProductData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cumque ullam ea!",
   },
   {
-    id: 6,
+    id: 21,
     img: leryafashion,
     ratings: 5.0,
     title: "Women wear",
@@ -70,7 +71,14 @@ const ProductData = [
   },
 ];
 
-const TopProducts = () => {
+// eslint-disable-next-line react/prop-types
+const TopProducts = ({ setOrderPopup }) => {
+  // const [data setData]=()
+
+  const handleClose = () => {
+    setOrderPopup(true);
+  };
+
   return (
     <div>
       <div className="container">
@@ -113,7 +121,10 @@ const TopProducts = () => {
                   <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
                     {data.description}
                   </p>
-                  <button className="bg-orange-500 hover:scale-105 text-white rounded-full group-hover:bg-inherit group-hover:text-white p-1 mt-1 border group-hover:border-white">
+                  <button
+                    onClick={handleClose}
+                    className="bg-orange-500 hover:scale-105 text-white rounded-full group-hover:bg-inherit group-hover:text-white p-1 mt-1 border group-hover:border-white"
+                  >
                     Order Now
                   </button>
                 </div>

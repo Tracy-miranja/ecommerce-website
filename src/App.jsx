@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Products from "./components/Products/Products.jsx";
@@ -10,8 +10,11 @@ import Subscribe from "./components/Subscribe/Subscribe.jsx";
 import TopSelling2 from "./components/TopSelling2/TopSelling2.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
 import Footer from "./components/footer/Footer.jsx";
+import Popup from "./components/popup/Popup.jsx";
 
 const App = () => {
+  const [orderpopup, setOrderPopup] = useState(false);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -26,12 +29,13 @@ const App = () => {
       <Navbar />
       <Hero />
       <Products />
-      <TopProducts />
+      <TopProducts setOrderPopup={setOrderPopup} />
       <Banner />
       <Subscribe />
       <TopSelling2 />
       <Testimonials />
       <Footer />
+      <Popup orderpopup={orderpopup} setOrderPopup={setOrderPopup} />
     </div>
   );
 };
